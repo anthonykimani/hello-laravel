@@ -17,6 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/properties', function(){
-//     return 
-// })
+Route::get('/properties', [\App\Http\Controllers\PropertyController::class, 'index']);
