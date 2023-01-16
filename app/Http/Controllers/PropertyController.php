@@ -46,9 +46,11 @@ class PropertyController extends Controller
      * @param  \App\Models\Property  $property
      * @return \Illuminate\Http\Response
      */
-    public function show(Property $property)
+    public function show(Property $property, $id)
     {
         //
+        $property = Property::find($id);
+        return $property;
     }
 
     /**
